@@ -1,8 +1,8 @@
-<?php
+ï»¿<?php
 
 include_once("STUNClient.php");
 
-//ÆÁ±ÎsocketÍ¨ÐÅ¾¯¸æ
+//å±è”½socketé€šä¿¡è­¦å‘Š
 error_reporting(E_ERROR);
 
 $sc = new STUNClient();

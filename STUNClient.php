@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 
 /**
@@ -34,14 +34,14 @@ class RET_VALUE
  */
 class NAT_TYPE
 {
-    static $_NAT_TYPE_OPENED = 0;       //ÓµÓÐ¹«ÍøIP
+    static $_NAT_TYPE_OPENED = 0;       //æ‹¥æœ‰å…¬ç½‘IP
     static $_NAT_TYPE_FULLCONE_NAT = 1; //
-    static $_NAT_TYPE_REST_NAT = 2;     //ÏÞÖÆµØÖ·
-    static $_NAT_TYPE_PORTREST_NAT = 3; //ÏÞÖÆ¶Ë¿Ú
-    static $_NAT_TYPE_SYM_UDP_FIREWALL = 4; //·À»ðÇ½
+    static $_NAT_TYPE_REST_NAT = 2;     //é™åˆ¶åœ°å€
+    static $_NAT_TYPE_PORTREST_NAT = 3; //é™åˆ¶ç«¯å£
+    static $_NAT_TYPE_SYM_UDP_FIREWALL = 4; //é˜²ç«å¢™
     static $_NAT_TYPE_SYM_NAT_LOCAL = 5;
-    static $_NAT_TYPE_SYM_NAT = 6;      //¶Ô³ÆÐÍ
-    static $_NAT_TYPE_UDP_BLOCKED = 7;  //·À»ðÇ½ÏÞÖÆUDPÍ¨ÐÅ
+    static $_NAT_TYPE_SYM_NAT = 6;      //å¯¹ç§°åž‹
+    static $_NAT_TYPE_UDP_BLOCKED = 7;  //é˜²ç«å¢™é™åˆ¶UDPé€šä¿¡
 }
 
 /**
@@ -128,7 +128,7 @@ class STUNClient{
     /**
      * STUNClient::testI1()
      * 
-     * ·¢ËÍ¸øStun·þÎñÆ÷µÄUDP°ü£¬¼ì²âÄÜ·ñ½ÓÊÜ£¬²¢±È½ÏÍâÍøÓ³ÉäIP
+     * å‘é€ç»™StunæœåŠ¡å™¨çš„UDPåŒ…ï¼Œæ£€æµ‹èƒ½å¦æŽ¥å—ï¼Œå¹¶æ¯”è¾ƒå¤–ç½‘æ˜ å°„IP
      * 
      * @return 
      */
@@ -221,7 +221,7 @@ class STUNClient{
     /**
      * STUNClient::testII()
      * 
-     * Í¨Öª·þÎñÆ÷»»Ò»¸ö¶Ë¿ÚÓëIP·µ»ØÐÅÏ¢
+     * é€šçŸ¥æœåŠ¡å™¨æ¢ä¸€ä¸ªç«¯å£ä¸ŽIPè¿”å›žä¿¡æ¯
      * 
      * @return
      */
@@ -268,7 +268,7 @@ class STUNClient{
     /**
      * STUNClient::testI2()
      * 
-     * Ïò¸ü»»ºóµÄ·þÎñÆ÷IPÓëPortÍ¨ÐÅ²¢¼ì²âÄÜ·ñ½ÓÊÕÊý¾Ý
+     * å‘æ›´æ¢åŽçš„æœåŠ¡å™¨IPä¸ŽPorté€šä¿¡å¹¶æ£€æµ‹èƒ½å¦æŽ¥æ”¶æ•°æ®
      * 
      * @return
      */
@@ -349,7 +349,7 @@ class STUNClient{
     /**
      * STUNClient::testIII()
      * 
-     * Í¨Öª·þÎñÆ÷ÓÃÍ¬IPµ«ÊÇÊÇÁíÍâÒ»¸ö¶Ë¿Ú·µ»ØÐÅÏ¢
+     * é€šçŸ¥æœåŠ¡å™¨ç”¨åŒIPä½†æ˜¯æ˜¯å¦å¤–ä¸€ä¸ªç«¯å£è¿”å›žä¿¡æ¯
      * 
      * @return
      */
@@ -522,7 +522,7 @@ class STUNClient{
     /**
      * STUNClient::getNatType()
      * 
-     * @return »ñÈ¡ÍøÂçÀàÐÍ
+     * @return èŽ·å–ç½‘ç»œç±»åž‹
      */
     public function getNatType(){
         
@@ -567,7 +567,7 @@ class STUNClient{
     /**
      * STUNClient::getMappedAddr()
      * 
-     * @return ±¾»úÍâÍøÓ³ÉäIPÓë¶Ë¿Ú
+     * @return æœ¬æœºå¤–ç½‘æ˜ å°„IPä¸Žç«¯å£
      */
     public function getMappedAddr(){
         
@@ -641,7 +641,7 @@ class STUNClient{
      * STUNClient::natType2String()
      * 
      * @param mixed $t
-     * @return ±¾»úÍøÂçÀàÐÍ
+     * @return æœ¬æœºç½‘ç»œç±»åž‹
      */
     public function natType2String($t){
         if($t == NAT_TYPE::$_NAT_TYPE_OPENED){
