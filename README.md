@@ -19,7 +19,7 @@ MAPPED ADDRESS:218.17.55.162:15499
 </code></pre>
 
 *	找一个公共标准的Stun服务器，替换下面的服务器地址
-<pre><code>
+```php
 <?php
 include_once("STUNClient.php");
 error_reporting(E_ERROR);
@@ -29,7 +29,7 @@ $sc->createSocket();
 print("NAT TYPE:" . $sc->natType2String($sc->getNatType()) ."\n");
 print("MAPPED ADDRESS:" . $sc->getMappedAddr() . "\n");
 ?>
-</code></pre>
+```
 
 Weibo Account
 -------------
